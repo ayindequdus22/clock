@@ -1,0 +1,99 @@
+*{
+    margin:0;
+padding:0;
+font-weight: 'poppins',sans-serif;
+}
+.container{
+    height:100vh;
+    display:flex;
+ justify-content: center;
+    align-items: center;
+    width:100%;
+}
+body{
+    background:linear-gradient(to right, #B06AB3, #4568DC);  
+
+    /* background: linear-gradient(to right, #191654, #43C6AC); */
+}
+.clock{
+    width:35rem;
+    height:35em;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0px 8px 32px 0 rgba(31,38,135,0.2) 0px 60px 40px -7px;
+    backdrop-filter:blur(4px);
+ border-radius: 50%;
+ position:relative;
+ border:solid 1px rgba(255,255,255,0.18);
+
+}
+.numbers{
+    width:inherit;
+    height: inherit;
+    position:relative;
+}
+.numbers div{
+    position: absolute;
+    font-size: 2.5em;
+    color:white
+}
+.twelve{
+top:1em;
+left:50%;
+transform: translateX(-50%);
+}
+.three{
+    right:1em;
+    top:50%;
+    transform: translateX(-50%);
+    }
+    .nine{
+        left:1em;
+        top:50%;
+        transform: translateX(-50%);
+        }
+        .six{
+            bottom:1em;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .arrows{
+            width:inherit;
+            height:inherit;
+            position:absolute;
+top:0;
+left:0;
+display:flex;
+justify-content: center;
+align-items:center;
+
+        }
+        .arrows:before{
+            content: "";
+            width:2.5em;
+            height:2.5em;
+            background-color: white;
+            border-radius:50%;
+position: absolute;
+box-shadow:0.2rem 0.2rem 0.5rem #777;
+z-index: 10;
+        }
+        .arrows div{
+            width:0.7rem;
+            height:12rem;
+            background-color: #fff0f5;
+            position:absolute;
+            bottom:50%;
+            box-shadow:.2rem 0.2rem 0.5rem #777;
+            border-radius:100% 100% 0 0;
+            transform-origin:bottom center ;
+        }
+        .arrows.hour{
+height:10rem;
+transform: rotate(90deg);
+        }
+
+        .arrows .second{
+
+background-color: #eb6160;
+transform: rotate(270deg);
+        }
